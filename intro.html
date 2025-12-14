@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vikash Kumar | Personal Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+       .custom-hr{
+  border: none;
+  height: 2px;
+  width: 80%;
+  margin: 50px auto;
+  background: linear-gradient(
+    to right,
+    transparent,
+    #0ea5e9,
+    transparent
+  );
+}
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins', sans-serif;
+    }
+
+    body{
+     
+      background: rgba(255,172,28,0.3);
+      color:#1f2933;
+      overflow-x:hidden;
+    }
+
+    header{
+       color:#fff;
+      background-color:#0ea5e9;
+      padding:40px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      animation: slideDown 1s ease;
+    }
+
+    header h1{
+      color:#fff;
+      font-weight:600;
+      font-size:28px;
+    }
+
+    header nav a{
+      margin-left:25px;
+      text-decoration:none;
+      color:#fff;
+      font-weight:500;
+      position:relative;
+    }
+
+    header nav a::after{
+      content:'';
+      position:absolute;
+      left:0;
+      bottom:-5px;
+      width:0;
+      height:2px;
+      background:#0ea5e9;
+      transition:0.3s;
+    }
+
+    header nav a:hover::after{
+      width:100%;
+
+    }
+
+    .hero{
+      min-height:85vh;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:0 8%;
+    }
+
+    .hero-text{
+      max-width:550px;
+      animation: fadeLeft 1.2s ease;
+    }
+
+    .hero-text h2{
+      font-size:42px;
+      line-height:1.2;
+    }
+
+    .hero-text h2 span{
+      color:#0ea5e9;
+    }
+
+    .hero-text p{
+      margin:20px 0;
+      color:#475569;
+      font-size:16px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 26px;
+      background:#0ea5e9;
+      color:#fff;
+      text-decoration:none;
+      border-radius:30px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#0284c7;
+      transform:translateY(-3px);
+    }
+
+    .hero-img{
+      animation: fadeRight 1.2s ease;
+    }
+
+    .hero-img img{
+      width:220px;
+      height:280px;
+      object-fit:cover;
+      border-radius:16px;
+      border:5px solid #e0f2fe;
+      box-shadow:0 15px 40px rgba(14,165,233,0.25);
+    }
+
+    section{
+      padding:80px 8%;
+    }
+
+    .section-title{
+      text-align:center;
+      font-size:30px;
+      margin-bottom:50px;
+      color:#0ea5e9;
+    }
+
+    .contact{
+      display:flex;
+      justify-content:center;
+      gap:40px;
+      flex-wrap:wrap;
+    }
+
+    .contact-card{
+      background:#ffffff;
+      padding:30px 35px;
+      border-radius:16px;
+      width:260px;
+      text-align:center;
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+
+    .contact-card:hover{
+      transform:translateY(-10px);
+      box-shadow:0 20px 40px rgba(14,165,233,0.2);
+    }
+
+    .contact-card h3{
+      color:#0ea5e9;
+      margin-bottom:10px;
+    }
+
+    .contact-card a{
+      color:#334155;
+      text-decoration:none;
+      font-size:14px;
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      background:#f1f9ff;
+      color:#475569;
+      font-size:14px;
+    }
+
+    @keyframes fadeLeft{
+      from{opacity:0; transform:translateX(-60px);} 
+      to{opacity:1; transform:translateX(0);} 
+    }
+
+    @keyframes fadeRight{
+      from{opacity:0; transform:translateX(60px);} 
+      to{opacity:1; transform:translateX(0);} 
+    }
+
+    @keyframes slideDown{
+      from{opacity:0; transform:translateY(-40px);} 
+      to{opacity:1; transform:translateY(0);} 
+    }
+
+    @media(max-width:900px){
+      .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+        gap:40px;
+      }
+    }
+    a{
+    color:#0056b3;
+    text-decoration:none;
+}
+a:hover{text-decoration:underline}
+
+/* Skills hover effect */
+.skills-list ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills-list li {
+    background-color: #e6f7ff;
+    color: #0ea5e9;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 1px solid #b3d9ff;
+    transition: transform 160ms ease, box-shadow 160ms ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    cursor: pointer;
+}
+
+.skills-list li:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+footer{
+    text-align:center;
+    padding:20px 0;
+    background:#333;
+    color:#fff;
+    margin-top:30px;
+    font-size:.9em;
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Vikash Kumar</h1>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+   
+  </header>
+
+
+  <div class="hero">
+    <div class="hero-text">
+      <h2>Hello, I'm <span>Vikash</span></h2>
+      <p>
+       I am currently pursuing my Bachelor of Science (BSc) degree from Allahabad State University, expected to complete in 2027.  
+I am passionate about web development and enjoy creating responsive, user-friendly websites using HTML, CSS, and JavaScript.  
+I am a quick learner and continuously work on improving my technical and problem-solving skills through practice and real projects.
+      </p>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+
+    <div class="hero-img">
+      <img src="ss.jpg" alt="Passport Size Photo">
+    </div>
+  </div>
+  <body>
+
+<header>
+    <p class="fade-slide2">Aspiring Web Developer & Analytical Thinker</p>
+</header>
+
+<div class="container">
+
+<!-- ABOUT -->
+<section id="about">
+<h2><span>👤 About Me</span></h2>
+<p>
+Hello! My name is Vikash. I am currently pursuing my Bachelor of Science (BSc) degree from Allahabad State University, expected to complete in 2027.  
+I am passionate about web development and enjoy creating responsive, user-friendly websites using HTML, CSS, and JavaScript.  
+I am a quick learner and continuously work on improving my technical and problem-solving skills through practice and real projects.
+</p>
+<hr class="custom-hr">
+
+
+<h3>Hobbies and Interests</h3>
+<ul>
+    <li>🏏 Playing and watching <strong>Cricket</strong></li>
+    <li>🛌 Listing <strong>Music</strong></li>
+    <li>🎮 Playing <strong>Online Games</strong></li>
+    <li>🛌 Maintaining proper <strong>Sleep & Discipline</strong></li>
+</ul>
+</section>
+<hr class="custom-hr">
+
+
+<!-- SKILLS -->
+<section id="skills">
+<h2><span>🛠️ Skills & Expertise</span></h2>
+<div class="skills-list">
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>MS Office</li>
+        <li>Typing</li>
+        <li>Data Entry</li>
+    </ul>
+</div>
+</section>
+<hr class="custom-hr">
+
+
+
+  <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact">
+
+      <div class="contact-card">
+        <h3>Email</h3>
+        <a href="mailto:s98145241@gmail.com">Mail Me</a>
+      </div>
+
+      <div class="contact-card">
+        <h3>Instagram</h3>
+        <a href="https://www.instagram.com/adeptzen.sunnny?igsh=MWp5enp4MnRnMjZkZQ==" target="_blank">@adeptzen.sunnny</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Vikash Kumar. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
